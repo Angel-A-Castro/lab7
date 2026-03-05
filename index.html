@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Planetary Fact Sheet | Lab 7</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container">
+        <p class="kicker">Lab 7</p>
+        <h1 class="title">Planetary Fact Sheet</h1>
+        <p class="subtitle">
+          A styled comparison table for four planets using NASA/JPL Solar System Dynamics data.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="intro" aria-labelledby="intro-title">
+        <h2 id="intro-title">What you’re looking at</h2>
+        <p>
+          This page combines key physical parameters for Mercury, Venus, Earth, and Mars into one
+          table. The first row uses images for quick recognition, and the rows beneath compare
+          seven different data fields.
+        </p>
+        <p class="note">
+          Note: Venus has a negative sidereal rotation period because it rotates in the opposite
+          direction (retrograde).
+        </p>
+      </section>
+
+      <section class="table-card" aria-labelledby="table-title">
+        <h2 id="table-title">Four-Planet Comparison</h2>
+
+        <div class="table-wrap" role="region" aria-label="Planet comparison table" tabindex="0">
+          <table class="data-table" id="planets">
+            <caption>
+              Planetary physical parameters (7 fields). Values from NASA/JPL Solar System Dynamics.
+            </caption>
+
+            <thead>
+              <tr>
+                <th scope="col">Field</th>
+                <th scope="col">Mercury</th>
+                <th scope="col">Venus</th>
+                <th scope="col">Earth</th>
+                <th scope="col">Mars</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="row-images">
+                <th scope="row">Image</th>
+                <td>
+                  <img class="planet-img" src="images/planet_1.png" alt="Mercury">
+                </td>
+                <td>
+                  <img class="planet-img" src="images/planet_2.png" alt="Venus">
+                </td>
+                <td>
+                  <img class="planet-img" src="images/planet_3.png" alt="Earth">
+                </td>
+                <td>
+                  <img class="planet-img" src="images/planet_4.png" alt="Mars">
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Mean radius (km)</th>
+                <td>2,439.4</td>
+                <td>6,051.8</td>
+                <td>6,371.0084</td>
+                <td>3,389.50</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Mass (×10<sup>24</sup> kg)</th>
+                <td>0.330103</td>
+                <td>4.86731</td>
+                <td>5.97217</td>
+                <td>0.641691</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Bulk density (g/cm<sup>3</sup>)</th>
+                <td>5.4289</td>
+                <td>5.243</td>
+                <td>5.5134</td>
+                <td>3.9340</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Sidereal rotation (days)</th>
+                <td>58.6462</td>
+                <td>-243.018</td>
+                <td>0.99726968</td>
+                <td>1.02595676</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Sidereal orbital period (years)</th>
+                <td>0.2408467</td>
+                <td>0.61519726</td>
+                <td>1.0000174</td>
+                <td>1.8808476</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Equatorial gravity (m/s<sup>2</sup>)</th>
+                <td>3.70</td>
+                <td>8.87</td>
+                <td>9.80</td>
+                <td>3.71</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Escape velocity (km/s)</th>
+                <td>4.25</td>
+                <td>10.36</td>
+                <td>11.19</td>
+                <td>5.03</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="source">
+          Source: NASA/JPL Solar System Dynamics — Planetary Physical Parameters.
+        </p>
+      </section>
+
+      <section class="extras" aria-labelledby="extras-title">
+        <h2 id="extras-title">Extra touches</h2>
+        <ul class="bullets">
+          <li>Sticky header row for easier reading while scrolling.</li>
+          <li>Striped rows and hover highlight for clarity.</li>
+          <li>Rounded image tiles and a card-style layout.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          Lab 7 table styling practice. Return to
+          <a href="#top">top</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
